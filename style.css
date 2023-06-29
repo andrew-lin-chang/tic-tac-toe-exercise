@@ -57,3 +57,7 @@ h1 {
 .cell:hover {
     background: grey;
 }
+
+.win {
+    background: lightgreen;
+}
