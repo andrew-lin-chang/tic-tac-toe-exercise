@@ -41,6 +41,11 @@ h1 {
     height: 150px;
     width: 150px;
     border-radius: 20px;
+    font-size: 6rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell:hover {
