@@ -60,6 +60,7 @@ function GameController() {
 function ScreenController() {
     const game = GameController();
     const board = game.getBoard();
+    const currentPlayer = document.querySelector('.current-turn');
     const boardDiv = document.querySelector('.game-board');
 
     const handleClick = (event) => {
@@ -86,6 +87,8 @@ function ScreenController() {
                 boardDiv.appendChild(cellBox);
             })
         })
+
+        currentPlayer.textContent = `${game.getActivePlayer().name}'s turn`;
     }
 
     //initial render
